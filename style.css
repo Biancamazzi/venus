@@ -154,6 +154,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .row.header-content p {
@@ -296,7 +297,39 @@ hr{
   margin-top: 60px;
   
 }
-
 #copyright {
   text-align: center;
+}
+
+/* MOBILE */
+@media(max-width: 400px) {
+  .active{    
+    margin-top: 20px;
+  }
+  .phone-container{
+    height: 24px;
+  }
+  .img-phone{
+    display: none;
+  }
+  .wave {
+    top: -21px;  
+  }
+  .slick-slide img{
+    display: initial !important;
+  }
+  #email-field{
+    width: 75%;
+  }
+  #newsletter-submit{
+    width: 74px;
+  }
+  h6{
+    margin-top: 45px;
+    font-size: 20px;
+  }
+  li{
+    display: block;
+    float: none;
+  }
 }
