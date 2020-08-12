@@ -74,6 +74,9 @@ nav {
   background-color: none;
   margin-top: 25px;
 }
+navbar-nav a:hover{
+  color: #223266;
+}
 
 nav .navbar-toggler {
   border: 1px solid #fff;
@@ -286,6 +289,14 @@ h5 {
 
 #footer {
   color: #eff3f9;
+}
+
+#footer a{
+  text-decoration: none;
+  color: #eff3f9;
+}
+#footer a:hover{
+  color: #f06178;
 }
 
 ul {
