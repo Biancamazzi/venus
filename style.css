@@ -305,7 +305,7 @@ hr{
 }
 
 /* MOBILE */
-@media(max-width: 400px) {
+@media(max-width: 500px) {
   .active{    
     margin-top: 20px;
   }
@@ -335,4 +335,17 @@ hr{
     display: block;
     float: none;
   }
+}
+
+/* IPAD */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px){
+  .wave {
+    top: -29px;
+  }
+  #newsletter-submit{
+    width: 58px;
+  }
+
 }
