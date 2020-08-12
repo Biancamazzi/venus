@@ -1,22 +1,22 @@
-// CONTADOR
-let valorAtual = 0;
-const valorLimite = parseInt($(".counter h2").text());
+// CONTADORES
 
-const loopingSoma = setInterval(soma, 1);
-
-function soma(){
+function counter (elemento, valorLimite, incremento){   
+    setInterval(() => {
+        soma(elemento, valorLimite, incremento)
+    }, 1);
+    
+}
+function soma(elemento, valorLimite, incremento){
+    let valorAtual = parseInt(elemento.text());
     if( valorAtual != valorLimite){    
-        valorAtual++;
-        $(".counter h2").text(valorAtual); 
-    }
-    else {
-        pararSoma();
+        valorAtual = valorAtual + incremento;
+        elemento.text(valorAtual); 
     }
 }
-function pararSoma() {
-    clearInterval(loopingSoma);
-  }
 
+counter($(".projetos h2"), 1200, 1);
+counter($(".clientes h2"), 5800, 10);
+counter($(".cafes h2"), 10000, 10);
 
 // CARROSSEL
 
